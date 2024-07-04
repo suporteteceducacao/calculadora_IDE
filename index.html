@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="img/SIMPEMM LOGO 2018.png">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/cookies.css">
+		<title>Calculadora IDE</title>
+	</head>
+	<body>
+		<div class="container">
+		<figure><img src="img/Logomarca da Secretaria de Educação 2021.png" alt="logotipo da secretaria de educação de maracanaú" class="img"></figure>
+		<h3 style="text-align: center; font-size:25px">DIRETORIA DE AVALIAÇÃO E MONITORAMENTO</h3><br>
+		<h3 style="text-align: center; font-size:23px">Calculadora IDE - 2° , 5° e 9° Ano</h3><br>
+		<form action="" class="forms" autocomplete="off">
+			<h2> Selecione a escola</h2>
+			<div class="box">
+					<select class="btn_select" id="escola" onchange="get();">
+						<option >Selecione uma escola </option>
+						<option>	ADAUTO FERREIRA LIMA EMEIEF	</option>
+						<option>	ALMIR FREITAS DUTRA EMEIEF PREFEITO	</option>
+						<option>	ANA BEATRIZ MACEDO TAVARES MARQUES EMEF ESTUDANTE	</option>
+						<option>	ANTONIO DE ALBUQUERQUE SOUSA FILHO EMEIEF	</option>
+						<option>	ANTONIO GONDIM DE LIMA EMEIEF	</option>
+						<option>	APRENDER PENSANDO EMEF	</option>
+						<option>	BRAZ RIBEIRO DA SILVA EMEF	</option>
+						<option>	CARLOS DRUMMOND DE ANDRADE EMEIEF	</option>
+						<option>	CARLOS JEREISSATI EMEIEF SENADOR	</option>
+						<option>	CESAR CALS DE OLIVEIRA FILHO EMEIEF GOVERNADOR	</option>
+						<option>	CESAR CALS NETO EMEIEF	</option>
+						<option>	CEZARINA DE OLIVEIRA GOMES EMEIEF PROFª	</option>
+						<option>	CORA CORALINA EMEIEF	</option>
+						<option>	DULCE EMEIEF IRMA	</option>
+						<option>	EDSON QUEIROZ EMEIEF	</option>
+						<option>	EDWIRGES EMEIEF SANTA	</option>
+						<option>	ELEAZAR DE CARVALHO EMEF MAESTRO	</option>
+						<option>	ELIAN DE AGUIAR MENDES, EMEIEF	</option>
+						<option>	ELIAS SILVA OLIVEIRA EMEIEF	</option>
+						<option>	EVANDRO AYRES DE MOURA EMEF	</option>
+						<option>	FRANCISCA FLORENCIA DA SILVA EMEIEF PROFª	</option>
+						<option>	FRANCISCO ANTONIO FONTENELE EMEIEF	</option>
+						<option>	FRANCISCO ARAUJO DO NASCIMENTO EMEIEF PROFº	</option>
+						<option>	FRANCISCO BARBOSA EMEIEF COMISSARIO	</option>
+						<option>	FRANCISCO OSCAR RODRIGUES EMEIEF PROFº	</option>
+						<option>	FRANCISCO TABOZA FILHO, EMEF	</option>
+						<option>	GENCIANO GUERREIRO DE BRITO EMEiEF	</option>
+						<option>	HEITOR VILLA LOBOS EMEIEF	</option>
+						<option>	HELDER PESSOA CAMARA EMEIEF DOM	</option>
+						<option>	HERBERT JOSE DE SOUZA BETINHO EMEIEF	</option>
+						<option>	INTEGRANDO O SABER EMEIEF	</option>
+						<option>	JOAO MAGALHAES DE OLIVEIRA EMEIEF	</option>
+						<option>	JOAQUIM AGUIAR EMEIEF	</option>
+						<option>	JOSE ASSIS DE OLIVEIRA EMEIEF	</option>
+						<option>	JOSE BELISARIO DE SOUSA EMEF	</option>
+						<option>	JOSE DANTAS SOBRINHO EMEIEF	</option>
+						<option>	JOSE DE BORBA VASCONCELOS EMEF DR	</option>
+						<option>	JOSE MARIA BARROS PINHO EMEF PROFESSOR	</option>
+						<option>	JOSE MARIO BARBOSA EMEIEF	</option>
+						<option>	JOSE MARTINS RODRIGUES EMEIEF DEPUTADO	</option>
+						<option>	JOSE NOGUEIRA MOTA EMEIEF	</option>
+						<option>	LUIZ GONZAGA DOS SANTOS EMEIEF	</option>
+						<option>	MANOEL MOREIRA LIMA EMEIEF	</option>
+						<option>	MANOEL RODRIGUES PINHEIRO DE MELO EMEIEF	</option>
+						<option>	MANOEL ROSEO LANDIM EMEF	</option>
+						<option>	MARIA DE LOURDES SILVA EMEF PROFª	</option>
+						<option>	MARIA DO SOCORRO VIANA FREITAS EMEIEF PROFª	</option>
+						<option>	MARIA ISIS MENEZES ANDRADE, EMEIEF	</option>
+						<option>	MARIA JOSE HOLANDA DO VALE EMEIEF PROFª	</option>
+						<option>	MARIA JOSE ISIDORO EMEIEF PROFª	</option>
+						<option>	MARIA MARQUES DO NASCIMENTO EMEIEF	</option>
+						<option>	MARIA PEREIRA DA SILVA EMEF	</option>
+						<option>	MARIO COVAS EMEIEF GOVERNADOR	</option>
+						<option>	NAPOLEAO BONAPARTE VIANA EMEIEF	</option>
+						<option>	NARCISO PESSOA DE ARAUJO EMEIEF	</option>
+						<option>	NORBERTO ALVES BATALHA EMEIEF	</option>
+						<option>	NORMA CELIA PINHEIRO CRISPIM EMEIEF PROFª	</option>
+						<option>	PAULO FREIRE EMEIEF PROFº	</option>
+						<option>	POVO PITAGUARI EMIEB	</option>
+						<option>	RAIMUNDO NOGUEIRA EMEIEF	</option>
+						<option>	RACHEL DE QUEIROZ EMEF	</option>
+						<option>	RODOLFO TEOFILO EMEF	</option>
+						<option>	RUI BARBOSA EMEF	</option>
+						<option>	SINFRONIO PEIXOTO DE MORAIS EMEIEF	</option>
+						<option>	TANCREDO NEVES ECIM PRESIDENTE	</option>
+						<option>	TEREZA DE CALCUTA EMEF MADRE	</option>
+						<option>	ULYSSES GUIMARAES EMEF DEPUTADO	</option>
+						<option>	VALDENIA ACELINO DA SILVA EMEF	</option>
+						<option>	VINICIUS DE MORAIS EMEIEF	</option>
+						<option>	WALMIKI SAMPAIO DE ALBUQUERQUE EMEIEF	</option>
+					</select>
+			</div><br>
+				<h2> Selecione a etapa de aprendizado</h2>
+			<div class="box">
+				<select class="btn_select" id="serie" onchange="get();"/>
+					<option >Selecione etapa</option>
+					<option class="list_modo">2 ano </option>
+					<option class="list_modo">5 ano</option>
+					<option class="list_modo">9 ano</option>
+				</select>
+			</div><br>
+			<h2 class="titulo1"> Dados da taxa de participação</h2>
+			<label for=""><b>Digite o total de ALUNOS MATRICULADOS</b></label>
+			<input type="number" class="" id="alunos_matriculados" placeholder="ALUNOS MATRICULADOS">
+			
+			<label for=""><b>Digite o total de ALUNOS AVALIADOS</b></label>
+			<input type="number" class="" id="alunos_avaliados" placeholder="ALUNOS AVALIADOS"><br>
+			
+			<h2 class="titulo1"> ETAPAS de serie 5° ano e 9° ano</h2>
+			<label for="" ><b>Digite a PROFICIÊNCIA DE LÍNGUA PORTUGUESA</b></label>
+			<input type="number" class="" id="nota1" placeholder="LÍNGUA PORTUGUESA">
+			<small style="color:red; text-align:center; font-size: 13px;">*campo obrigatório se escolher a opção: "5° ano ou 9° ano"</small>
+			<label for=""><b>Digite a PROFICIÊNCIA DE MATEMÁTICA</b></label>
+			<input type="number" class="" id="nota2" placeholder="MÁTEMÁTICA">
+			<small style="color:red; text-align:center; font-size: 13px;">*campo obrigatório se escolher a opção: "5° ano ou 9° ano"</small><br>
+			
+			<h2 class="titulo1"> ETAPA de série 2° ano</h2>
+			<label for="" ><b>Digite a PROFICIÊNCIA MÉDIA</b></label>
+			<input type="number" class="" id="nota3" placeholder="PROFICIÊNCIA MÉDIA" disabled>
+			<small style="color:red; text-align:center; font-size: 13px;">*campo obrigatório se escolher a opção: "2° ano"</small><br>
+			
+			<h2 class="titulo1">Dados percentuais de aprendizado em Língua Portuguesa</h2>
+			<label for=""><b>Digite o percentual MUITO CRITICO (ou ALFABETIZAÇÃO INCOMPLETA, para a etapa <b>2° ANO</b>):</b></label>
+			<input type="number" class="" id="percent1_lp" placeholder= "MUITO CRITICO" value=""  required="required" min="0" step="0.01">
+			<label for=""><b>Digite o percentual CRITICO (ou INTERMEDIÁRIO, para a etapa <b>2° ANO</b>):</b></label>
+			<input type="number" class="" id="percent2_lp" placeholder= "CRITICO" value=""  required="required" min="0" step="0.01">
+			
+			<label for=""><b>Digite o percentual INTERMEDIÁRIO (ou SUFICIENTE, para a etapa <b>2° ANO</b>):</b></label>
+			<input type="number" class="" id="percent3_lp" placeholder= "INTERMEDIÁRIO" value=""  required="required" min="0" step="0.01">
+			
+			<label for=""><b>Digite o percentual ADEQUADO (ou DESEJÁVEL, para a etapa <b>2° ANO</b>):</b></label>
+			<input type="number" class="" id="percent4_lp" placeholder= "ADEQUADO" value=""  required="required" min="0" step="0.01"><br>
+			
+			<h2 class="titulo1">  ETAPA de série 2° ano</b></h2>
+			<label for=""><b>Digite o percentual NÃO ALFABETIZADO:</b></label>
+			<input type="number" class="percent5_lp" id="percent5_lp" placeholder=" NÃO ALFABETIZADO" value=""  required="" min="0" step="0.01" disabled><small style="color:red; text-align:center; font-size: 13px;">*campo obrigatório se escolher a opção: "2° ano"</small><br>
+			
+			<h2 class="titulo1">Dados percentuais de aprendizado em Matemática</h2>
+			<label for=""><b>Digite o  percentual MUITO CRITICO:</b></label>
+			<input type="number" class="" id="percent1" placeholder="MUITO CRITICO" value=""  required="" min="0" step="0.01">
+			
+			<label for=""><b>Digite o percentual CRITICO:</b></label>
+			<input type="number" class="" id="percent2" placeholder="CRITICO" value=""  required="" min="0" step="0.01">
+			
+			<label for=""><b>Digite o percentual INTERMEDIÁRIO:</b></label>
+			<input type="number" class="" id="percent3" placeholder="INTERMEDIÁRIO" value=""  required="" min="0" step="0.01">
+			
+			<label for=""><b>Digite o percentual ADEQUADO:</b></label>
+			<input type="number" class="" id="percent4" placeholder="ADEQUADO" value=""  required="" min="0" step="0.01">
+		</form><br>
+		<div class="buttton">
+			<!--<input type="submit" class="btn btn_calcular" value="calcular">
+			<input type="reset" class="btn btn_limpar" value="limpar" onclick="limpar();">-->
+			<button id="calc1" type="button" class="btn" onclick="media()">calcular  <i class="fa fa-calculator" aria-hidden="true"></i></button>
+			<button type="button" class="btn" onclick="limpar_campos()">limpar  <i class="fa fa-eraser" aria-hidden="true"></i></button>
+			<button type="button" class="btn" onclick="downloadPDF()">PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+		</div><br>
+		<span  class="resultado" id="resultado"></span>
+		<input type="button" name="botaoImprimir" class="btn_imprimir btn" value="imprimir" onClick="window.print()" style="display:none"/>
+			<p style="font-size:13px;">Diretoria de Avaliação e Monitoramento | Copyright <i class="fa fa-copyright" aria-hidden="true"></i>2022
+	</div>
+
+</div>
+<script src="js/media.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+</html>
